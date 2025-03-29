@@ -13,14 +13,17 @@ export default {
       },
 
       colors: {
-        g1: "#666666",
-        g2: "#e5e5e5",
+        black: "#140000",
+        white: "#fff",
 
-        g1: "#64a05f",
-        g2: "#327e50",
-        g3: "#265338",
+        gray1: "#666666",
+        gray2: "#e5e5e5",
 
-        r1: "#863739",
+        green1: "#64a05f",
+        green2: "#327e50",
+        green3: "#265338",
+
+        red1: "#863739",
       },
 
       fontSize: {

@@ -48,14 +48,13 @@ const BodyContainer = styled.div`
   height: fit-content;
 
   width: 100%;
-  background-color: aqua;
   margin-left: 12rem;
 `;
 
 const MainView = styled.div`
   width: 100%;
   padding: 1rem;
-  background-color: #266a6a;
+  background-color: var(--w);
   min-height: calc(100vh - 12rem);
 `;
 

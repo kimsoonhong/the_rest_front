@@ -1,14 +1,33 @@
 @import "tailwindcss";
 
+:root {
+  --b: #140000;
+  --w: #fff;
+  --r: #863739;
+
+  --gy2: #e5e5e5;
+  --gy1: #666666;
+
+  --gn1: #64a05f;
+  --gn2: #327e50;
+  --gn3: #265338;
+}
+
 *,
 *::before,
 *::after {
+  color: var(--b);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  line-height: 1;
+  line-height: unset;
+}
+
+a {
+  color: var(--b);
+  cursor: pointer;
 }
 
 #root {
@@ -41,12 +60,13 @@ input:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #265338;
+  /* background-color: #265338; */
+  background-color: var(--g3) !important;
   border-radius: 12px;
   border: none;
 }
 ::-webkit-scrollbar-track {
-  background-color: #ff000000;
+  background-color: var(--w);
 }
 
 .dd {

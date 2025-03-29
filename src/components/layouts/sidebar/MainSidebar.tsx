@@ -1,3 +1,4 @@
+import { hoverEffect } from "@/styles/styled";
 import styled from "@emotion/styled";
 
 interface IMainSidebar {
@@ -5,122 +6,29 @@ interface IMainSidebar {
 }
 
 export default function MainSidebar({ pathname }: IMainSidebar) {
+  console.log(pathname);
   return (
     <MainSidebarContainer>
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      {pathname}
-      <div>{pathname}</div>
-      <div>{pathname}</div>
-      <div>{pathname}</div>
-      <div>{pathname}</div>
-      <div>{pathname}</div>
-      <div>{pathname}</div>
-      <DIV>dsf</DIV> <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV> <DIV>dsf!!</DIV> <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf</DIV>
-      <DIV>dsf!!</DIV>
+      <ItemDiv>JAVA</ItemDiv>
+      <ItemDiv>JS</ItemDiv>
+      <ItemDiv>CSS</ItemDiv>
+      <ItemDiv>HTML</ItemDiv>
+      <ItemDiv>REACT</ItemDiv>
+      <ItemDiv>CS</ItemDiv>
+      <ItemDiv>SOMETHING</ItemDiv>
     </MainSidebarContainer>
   );
 }
 
 const MainSidebarContainer = styled.div`
-  background-color: antiquewhite;
+  background-color: var(--w);
   position: fixed;
   height: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   width: 12rem;
   flex-direction: column;
+  gap: 1rem;
 
   overflow: scroll;
   height: -webkit-fill-available;
@@ -129,6 +37,9 @@ const MainSidebarContainer = styled.div`
   text-overflow: ellipsis;
 `;
 
-const DIV = styled.div`
-  min-height: 100px;
+const ItemDiv = styled.div`
+  gap: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  ${hoverEffect}
 `;

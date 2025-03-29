@@ -18,6 +18,7 @@ const Router = () => {
   ];
 
   const element = useRoutes(routes);
+
   return element;
 };
 
